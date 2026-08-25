@@ -1,13 +1,6 @@
 # include <iostream>
+# include "list_utils.h"
 using namespace std;
-
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
 
 class Solution {
 public:
@@ -34,27 +27,6 @@ public:
         return head;
     }
 };
-
-void printList(ListNode* head) {
-    if (head == nullptr) {
-        cout << "Empty List (nullptr)" << endl;
-        return;
-    }
-    while (head != nullptr) {
-        cout << head->val;
-        if (head->next != nullptr) cout << " -> ";
-        head = head->next;
-    }
-    cout << endl;
-}
-
-void freeList(ListNode* head) {
-    while (head != nullptr) {
-        ListNode* temp = head->next;
-        delete head;
-        head = temp;
-    }
-}
 
 int main() {
     Solution sol;

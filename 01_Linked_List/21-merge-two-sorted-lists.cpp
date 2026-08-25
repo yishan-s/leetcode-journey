@@ -1,14 +1,6 @@
 # include <iostream>
-# include <vector>
+# include "list_utils.h"
 using namespace std;
-
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
 
 class Solution {
 public:
@@ -41,30 +33,6 @@ public:
         return mergedHead;
     }
 };
-
-// tool A: vector to linked list
-ListNode* createList(const vector<int>& nums) {
-    ListNode* dummy = new ListNode();
-    ListNode* curr = dummy;
-    for (int num : nums) {
-        curr->next = new ListNode(num);
-        curr = curr->next;
-    }
-    ListNode* head = dummy->next;
-    delete dummy;
-    return head;
-}
-
-// tool B：printList
-void printList(ListNode* head) {
-    ListNode* curr = head;
-    while (curr != nullptr) {
-        cout << curr->val;
-        if (curr->next != nullptr) cout << " -> ";
-        curr = curr->next;
-    }
-    cout << endl;
-}
 
 int main() {
     vector<int> nums1 = {1, 2, 4};
