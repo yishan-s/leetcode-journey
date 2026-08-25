@@ -1,0 +1,11 @@
+# macOS 系統隱藏檔
+.DS_Store
+
+# C++ 編譯產生的執行檔與快取
+*.out
+*.o
+*.dSYM/
+
+# 如果你剛剛有指定特定的執行檔名稱，也可以直接寫上它的名字
+reversedList
+my_list
