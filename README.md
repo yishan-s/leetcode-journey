@@ -4,7 +4,7 @@ My Data Structures and Algorithms Journey
 
 ## Directory
 * `01_Linked_List/` - 單向/雙向鏈結串列操作
-* `02_Array/` - 陣列與字串處理
+* `02_String/` - 字串處理
 
 ## Solved
 | No. | Problem | Difficulty |
@@ -15,3 +15,6 @@ My Data Structures and Algorithms Journey
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 Medium |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟢 Easy |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy |
+| 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 🟢 Easy |
